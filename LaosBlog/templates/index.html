@@ -1,0 +1,111 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ethan Tian's Personal Website</title>
+  <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="user">
+    {% if request.session.is_login %}
+                  <li><a href="#">Hello：{{ request.session.user_name }}{{ request.session.user_id }}</a></li>
+                  <li><a href="User/logout/">logout</a></li>
+              {% else %}
+                  <li><a href="User/login/">login</a></li>
+                  <li><a href="User/register/">register</a></li>
+              {% endif %}
+
+    </div>
+    <div class = "img1" id = "top">
+        <div id = "beginning">
+            <p>This is about me</p>
+        </div>
+    </div>
+ 
+    <section class = "section-bright">
+        <h2>Part One</h2>
+        <p>According to the two CaUC Color Test I did, I’ve gotten the result of “green”, which indicate a person who value competency and want to understand and control the realities of life. “Green” is highly associated with the ability of analyzing, solving problems, and developing systems. The test result also indicates that I’m a critical thinker, who don’t express my emotions openly and discuss my personal issues oftenly, but do experience deep feelings. The world of ideas and reasons is important to me, which also implies that I love intelligence, logic, and dislike redundancy. <br>Personalities like observant and understanding will allow me to observe the market demands and create useful programs. Critical thinking will be beneficial for me to carefully pick mistakes in the codes and try to improve the function of my apps as much as possible.</p>
+    </section>
+    
+    
+    <div class = "img2">
+        <div class = "border">
+            <p>"No pain no gain"</p>
+        </div>
+    </div>
+    
+    <section class = "section-dark">
+    <h2>Strength</h2>
+        <p>"Knowledgeable, Patience, Creativity,  Determination, Enthusiasm, Flexibility, Curiosity"</p>
+        <p>My creativity plays an important part in my daily life. I never did identical job like others who copy ideas off each other. Whenever there’s a project assigned, I will always complete it in a creative way to reach my own standard. Therefore it allows me to fill my apps and games with original ideas and to be more outstanding. On the other hand, enthusiasm is considered to be the most important factor that makes computing a lifelong career, because it is boring to the majority in terms of sitting in front of the computer and writing codes.
+
+        </p>
+
+    </section>
+    
+    <div class = "img3">
+        <div class = "border">
+            <p>You who are young, be happy while you are young, and let your heart give you joy in the days of your youth.<br>Ecclesiastes 11:9</p>
+        </div>
+    </div>
+    
+    <section class = "section-dark">
+    <h2>Skills</h2>
+        <p>"Teamwork, Creativity, Leadership, Knowledge, Communicative"</p>
+        <p>I believe that being appreciative to teamwork and having leadership is of critical importance to engineers as well as app/game developers because the projects and plans are always completed by the whole team instead of one single person in these areas. Having a professional organizer leads to the improve of efficiency for the entire team. Being communicative helps the team to observe the demands in the market and improve the product based on the sale targets' requirements.
+</p>
+        
+
+
+    </section>
+    
+    <div class = "img4">
+        <div class = "border">
+            <p>“Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge or wisdom in Sheol, to which you are going.”<br>(Ecclesiastes 9:10) </p>
+        </div>
+    </div>
+    
+    <section class = "section-dark">
+    <h2>Future Expectations</h2>
+    <p>As a programing learner, my current imagination is restricted by the limited knowledge I have with regards to web and game development. I'll try my best to build up a solid foundation in this filed so that I won't be restricted by the lack of coding skills in five years. </p>
+    </section>
+    
+     <div class = "img5">
+        <div class = "border" id = "ending">
+            <p>Thank you for viewing</p>
+        </div>
+    </div>
+    
+    <div class = "comment">
+        <div class = "commentWrap">
+            <p class="comment1">Please Write Your comment below:</p>
+            {% for comment in comments%}
+            <hr>
+            <p>{{ comment.content }}</p>
+            {% endfor %}
+
+            <hr>
+            <p>I love Lindas</p>
+            <hr>
+            <p>I love Lindas</p>
+            {% include 'Comment.html' %}
+           
+        </div>
+    </div>
+    
+    <footer>
+    <div class = "links">
+    <p><a href = "interest.html">My Interest</a></p>
+    <a href="#top"><p>Back to Top</p></a>
+    </div>
+    </footer>
+    
+    
+</body>
+</html>

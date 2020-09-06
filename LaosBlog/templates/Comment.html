@@ -1,0 +1,8 @@
+{% if request.session.is_login %}
+    <form method="post" action="/comments/post_comment">
+    {% csrf_token %}
+    <label for="id_content">content</label>
+    <input type="text" id = "id_content" name="content">
+    <input type="submit">
+    </form>
+{% endif %}

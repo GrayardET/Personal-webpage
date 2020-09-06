@@ -1,0 +1,164 @@
+/*
+images
+https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&h=350
+
+https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+
+https://images.pexels.com/photos/311012/pexels-photo-311012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+*/
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body,html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    
+    
+}
+
+#beginning {
+    padding-left:1.95%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    width:100%;
+    position: absolute;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 35px 80px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+        
+}
+
+.section-bright {
+    color:#666666;
+    font-weight: 400;
+}
+
+.section-dark {
+    background-color: #282E34;
+/*    opacity: 0.8;*/
+}
+
+#ending {
+    padding-top: 4%;
+    font-size: 24
+    
+}
+.img1 {
+    background-image: url('https://images.pexels.com/photos/448834/pexels-photo-448834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    
+    height:100vh;
+}
+
+.img2 {
+    background-image: url('https://images.pexels.com/photos/457713/pexels-photo-457713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 600px;
+}
+
+.img3 {
+    background-image: url('https://images.pexels.com/photos/545968/pexels-photo-545968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 600px;
+}
+
+.img4 {
+    background-image: url('https://images.pexels.com/photos/51360/keyboard-instrument-music-old-antique-51360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height:600px;
+}
+
+.img5 {
+    background-image:url('https://images.pexels.com/photos/828380/pexels-photo-828380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height:100%;
+}
+
+footer {
+    width:100%;
+    text-align: center;
+    overflow:hidden;
+    background-color: black;
+    position:fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer p {
+    display: inline-block;
+    padding:0 40px;
+    font-family: "Lato", sans-serif;
+    color:white;
+}
+
+a {
+     color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#D7A376;
+}
+
+footer p:hover {
+    color:#D7A376;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    background-attachment: fixed;
+}
+
+.border {
+    text-align: center;
+    top: 50%;
+    width:100%;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 0 7%;
+}
+
+.comment {
+    padding:50px;
+    background-color: #131517;
+}
+
+.comment p{
+/*    font-size: 16px;*/
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:white;
+    opacity:0.8;
+    
+}
+hr{
+    height:0.05px;
+    opacity:0.3;
+}
+
+.comment1{
+    font-size:25px;
+}
